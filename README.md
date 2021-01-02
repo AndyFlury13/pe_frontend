@@ -11,7 +11,7 @@
 
 After the text from article.txt has been loaded onto the page, the hard work begins. We then process vis_data.csv, which contains the output of PE's algorithm. In essence, vis_data.csv contains the locations of fallacies in the article and the severity of each of these fallacies. From vis_data.csv, we need to do two things: 1) place highlights on the text and 2) create the hallmark interactive visualization
 ##### Highlights
-![Picture of highlights](readme_pictures/highlights.png)
+![Picture of highlights](readme_pictures/highlight.png)
 To place highlights on the text, we process vis_data.csv line by line. For each line, start a highlight at start_index and end the highlight at end_index. The color of the highlight is dependent on the credibility indicator category, aka the general category of the fallacy. This is done with some nifty Jquery and string concatenation. For each highlight, we also track certain metadata.
 visualizations/assets/creteHighlights.js.
 #### Hallmark
