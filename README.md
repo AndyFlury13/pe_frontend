@@ -6,7 +6,9 @@
 
 ## Visualizations
 ![Image of Visualization.html](readme_pictures/vis.png)
+
 [Published Version](https://newsfeed.publiceditor.io/visualizations/47990959103662e94e796d979018922a/visualization.html)
+
 After the text from article.txt has been loaded onto the page, the hard work begins. We then process vis_data.csv, which contains the output of PE's algorithm. In essence, vis_data.csv contains the locations of fallacies in the article and the severity of each of these fallacies. From vis_data.csv, we need to do two things: 1) place highlights on the text and 2) create the hallmark interactive visualization
 ##### Highlights
 ![Picture of highlights](readme_pictures/highlights.png)
@@ -20,6 +22,8 @@ One of the key functionalities of the PE frontend is that hovering over a highli
 
 ## Newsfeed
 ![Image of Newsfeed.html](readme_pictures/newsfeed.png)
+[Published Version](https://www.publiceditor.io/newsfeed)
+
 The newsfeed acts as a PE's search engine, with the added benefit of seeing a simplified hallmark (1 layer) for each article. This requires reading in the article metadata contained in visDataTest.json. This json file contains a document for each article in the PE database. Based on the search conditions (see newsfeed/assets/newsfeed.js), we can obtain a set of articles to display on the newsfeed. We can sort by date, title, and credibility score. We create a div for each article, and load into the div the title, author, and first 100 characters of each article. In addition, I needed to create a small hallmark with one layer for each article in the newsfeed. This process is very similar to that of **visualizations**.
 
 ### Dependencies
